@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header        -->
+
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#009688"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRec"
+            tools:layout_editor_absoluteX="170dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="75dp"
+            android:layout_height="88dp"
+
+            android:background="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/main_logo" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewFacebook"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/rectangle_"-->
+<!--            app:srcCompat="@drawable/icon_facebook"/>-->
+
+        <!-- -->
+
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="KONTAKTY"
+            android:textColor="#F44336"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_" />
+<!--0-->
+
+        <TextView
+            android:id="@+id/txtVS0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:text="ul. Legionów 21, 91-069 Łódź \ntel. 42 633 25 39 centrala \nNIP: 724 000 46 79 \nRegon: 000279166 \ne-mail: teatr@powszechny.pl "
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tytul" />
+
+        <TextView
+            android:id="@+id/txtVS0callB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            android:text="Zadzwoń do nas:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS0" />
+
+        <!--        <TextView-->
+<!--            android:id="@+id/txtVB1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="Sekretariat/Organizator pracy"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtVS0callS" />-->
+
+<!--1-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtVS1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="ul. Legionów 21, 91-069 Łódź \ntel. 42 633 25 39 centrala \nNIP: 724 000 46 79 \nRegon: 000279166 \ne-mail: teatr@powszechny.pl "-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtVB1" />-->
+<!--&lt;!&ndash;2&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtVB2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="Dział Sprzedaży i Obsługi Widzów"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtVS1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtVS2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="wtorek-piątek: 9.00-19.00 \nsobota-niedziela: 13.00-19.00 \ntel. 42 633 50 36 \ntel. 42 633 25 39 wew. 314 \ne-mail: bilety@powszechny.pl"-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtVB2" />-->
+
+<!--&lt;!&ndash;3&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtVB3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="Dział Literacki"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtVS2" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtVS3"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="kierownik literacki: Anna Maria Dolińska \ntel. 42 633 25 39 wew. 303 \ne-mail: anna.dolinska@powszechny.pl \ne-mail: liter@powszechny.pl \ne-mail: edward.ad@powszechny.pl \nzastępca kierownika: 42 630 72 68\n\ntel. 42 633 25 39 wew. 303 \ne-mail: edward.ad@powszechny.pl \ntel. 42 755 85 75 wew. 305 \ne-mail: kasia.wol@powszechny.pl"-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtVB3" />-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--    footer    -->
+
+
+        <TextView
+            android:id="@+id/txtVS0callS"
+            android:layout_width="365dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="42 633 25 39"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/rectangle_floor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS0callB"
+            app:layout_constraintVertical_bias="0.026" />
+
+        <View
+            android:id="@+id/rectangle_floor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp"
+            android:background="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS3"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_floor"
+            app:srcCompat="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="Legionów 21, 91-069 Łódź"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adres"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="moj@teatr.pl"
+            android:autoLink="email"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail_icon" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

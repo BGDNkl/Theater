@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        header        -->
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#009688"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRec"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/main_logo" />
+
+        <!--        1        -->
+
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/icon_facebook" />
+
+        <Button
+            android:id="@+id/btnSpektakle"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="SPEKTAKLE"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_" />
+
+        <!--        2        -->
+        <Button
+            android:id="@+id/btnCennik"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Cennik"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSpektakle" />
+
+        <!--        3        -->
+        <Button
+            android:id="@+id/btnKasa"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="kasa biletowa"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCennik" />
+        <!--        13        -->
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Galeria"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnKasa" />
+
+        <!--        4        -->
+        <Button
+            android:id="@+id/btnONas"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="o nas"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGallery" />
+
+        <!--        5        -->
+        <Button
+            android:id="@+id/btnKontakt"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="kontakt"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnONas" />
+
+        <!--        6        -->
+        <Button
+            android:id="@+id/btnZespolA"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="zespół artystyczny"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnKontakt" />
+
+        <!--        7        -->
+        <Button
+            android:id="@+id/btnZespolT"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="zespół techniczny"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnZespolA" />
+
+        <!--        8        -->
+        <Button
+            android:id="@+id/btnZespolAd"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="zespół administracyjny"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnZespolT" />
+
+        <!--        9        -->
+        <Button
+            android:id="@+id/btnHistoria"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="historia"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnZespolAd" />
+
+        <!--        10        -->
+        <Button
+            android:id="@+id/btninIcyatywa1"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Teatr dla słabo widzących"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHistoria" />
+
+        <!--        11        -->
+        <Button
+            android:id="@+id/btnInicyatywa2"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Dziecko w sytuacji"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btninIcyatywa1" />
+
+        <!--        12        -->
+        <Button
+            android:id="@+id/btnLekcje"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Lekcje teatralne"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnInicyatywa2" />
+
+<!--        &lt;!&ndash;        13        &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnGallery"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="69dp"-->
+<!--            android:layout_marginStart="24dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:background="@android:color/holo_red_light"-->
+<!--            android:text="Galeria"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/btnLekcje" />-->
+
+        <!--        14        -->
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Nasza Lokalizacja"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLekcje" />
+
+        <Button
+            android:id="@+id/btnWView"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/holo_red_light"
+            android:text="WeView"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+
+        <!--        footer        -->
+        <View
+            android:id="@+id/rectangle_floor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:background="#009688"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintTop_toBottomOf="@+id/btnWView"
+            tools:layout_editor_absoluteX="292dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_floor"
+            app:srcCompat="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="Legionów 21, 91-069 Łódź"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adres"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="moj@teatr.pl"
+            android:autoLink="email"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header        -->
+
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#009688"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRec"
+            tools:layout_editor_absoluteX="170dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="75dp"
+            android:layout_height="88dp"
+
+            android:background="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/main_logo" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewFacebook"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/rectangle_"-->
+<!--            app:srcCompat="@drawable/icon_facebook"/>-->
+
+        <!-- -->
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Dryl"
+            android:textColor="#F43636"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_" />
+
+
+        <ImageView
+            android:id="@+id/imgV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tytul"
+            app:srcCompat="@drawable/w2" />
+
+
+        <TextView
+            android:id="@+id/txtV1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5sp"
+            android:text='Autor: Wojciech Bruszewski  \nReżyseria: Marta Streker  \nScenografia: Anna Trzpis  \nKostiumy: Julia Kosmynka  \nMuzyka: Sebastian Ładyżyński  \nChoreografia/ruch sceniczny: Katarzyna Kostrzewa  \nReżyser światła: Mariusz Maniewski  \nObsada: Barbara Szcześniak, Marta Jarczewska/Karolina Krawczyńska, Monika Kępka, Jan Wojciech  Poradowski, Filip Jacak, Artur Zawadzki, Michał Lacheta, Arkadiusz Wójcik  \nAkcja „Dryla” rozgrywa się w zdegradowanej klinice dentystycznej. Nie jest jednak satyrą na służbę zdrowia. W zamkniętej przestrzeni obserwujemy chory porządek funkcjonowania małej społeczności – szpital staje się mikrokosmosem, w którym dochodzi do absurdalnych, wręcz surrealistycznych zachowań. W spektaklu zacierają się funkcje społeczne, moralność jest wypaczona. Dentyści stają się pacjentami, a pacjenci dentystami. „Dryl” ma formę absurdalnego musicalu utrzymanego w klimacie czarnej komedii. Ta pozornie lekka formuła pozwala jednak podjąć bardzo ważne tematy. Sztuka stawia pytania o kondycję człowieka w świecie, w którym jednostka staje się przedmiotem eksperymentu. Mówi o poddawaniu społeczeństwa ciągłej manipulacji i indoktrynacji.   \n \n"Dryl" to jedyna sztuka teatralna napisana przez Wojciecha Bruszewskiego. Łódzki artysta związany jest ze środowiskiem awangardowym i jest jednym z prekursorów sztuki wideo w Polsce. Tekst Bruszewskiego został zgłoszony do "Komediopisania" - organizowanego przez Teatr Powszechny w Łodzi ogólnopolskiego konkursu na napisanie współczesnej polskiej komedii. '
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgV1" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Info:"
+            android:textColor="#F43636"
+            android:textSize="27sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV1" />
+
+        <TextView
+            android:id="@+id/txtV2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5sp"
+            android:text="Bilety   \nNormalny: 40 złotych  \nUlgowy: 30 złotych  \n  \nCzas trwania  \n1 godzina 15 minut (bez przerwy)  \n\nKiedy gramy  \n06 października 	g. 19:15  \n07 października 	g. 16:00 "
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--    footer    -->
+
+
+        <View
+            android:id="@+id/rectangle_floor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:background="#009688"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/txtV2"
+            tools:layout_editor_absoluteX="370dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_floor"
+            app:srcCompat="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="Legionów 21, 91-069 Łódź"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adres"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="moj@teatr.pl"
+            android:autoLink="email"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail_icon" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

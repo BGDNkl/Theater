@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header        -->
+
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#009688"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRec"
+            tools:layout_editor_absoluteX="170dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="75dp"
+            android:layout_height="88dp"
+
+            android:background="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/main_logo" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewFacebook"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/rectangle_"-->
+<!--            app:srcCompat="@drawable/icon_facebook"/>-->
+
+        <!-- -->
+
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="Zespół artystyczny"
+            android:textColor="#F44336"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_" />
+
+        <TextView
+            android:id="@+id/txtVS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="To są naszy aktorzy:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="159dp"
+            app:layout_constraintTop_toBottomOf="@+id/tytul" />
+
+        <TextView
+            android:id="@+id/txtVS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="5dp"
+            android:text="1.Ewa Pilawska \n 2.Małgorzata Goździk \n 3.Magdalena Dratkiewicz \n 4.Janusz German \n 5.Marta Górecka \n 6.Mirosław Henke \n 7.Filip Jacak \n 8.Andrzej Jakubas \n 9.Marta Jarczewska \n 10.Monika Kępka \n 11.Jakub Kotyński \n 12.Karolina Krawczyńska \n 13.Jakub Kryształ \n 14.Michał Lacheta \n 15.Barbara Lauks \n 16.Piotr Lauks \n 17.Karolina Łukaszewicz \n 18.Artur Majewski \n 19.Adam Marjański \n 20.Paulina Nadel \n 21.Zofia Plewińska \n 22.Barbara Połomska \n 23.Jan Wojciech Poradowski \n 24.Ewa Sonnenburg "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS1" />
+
+
+
+
+        <!--    footer    -->
+
+        <View
+            android:id="@+id/rectangle_floor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96dp"
+            android:background="#009688"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS2"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_floor"
+            app:srcCompat="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="Legionów 21, 91-069 Łódź"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adres"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="moj@teatr.pl"
+            android:autoLink="email"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

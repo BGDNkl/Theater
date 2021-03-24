@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header        -->
+
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#009688"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRec"
+            tools:layout_editor_absoluteX="170dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="75dp"
+            android:layout_height="88dp"
+
+            android:background="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/main_logo" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewFacebook"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/rectangle_"-->
+<!--            app:srcCompat="@drawable/icon_facebook"/>-->
+
+        <!-- -->
+
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="119dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="HISTORIA"
+            android:textColor="#F44336"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_" />
+
+        <TextView
+            android:id="@+id/txtVB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Początek"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="163dp"
+            app:layout_constraintTop_toBottomOf="@+id/tytul" />
+
+        <TextView
+            android:id="@+id/txtVS1"
+            android:layout_width="371dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:text="Scena przy dzisiejszej ulicy Legionów w Łodzi zaczęła działać pod szyldem Teatr Powszechny w maju 1945 roku.  \nWydział Kultury i Sztuki Urzędu Wojewódzkiego Łódzkiego powierzył wówczas stanowisko kierownika sceny przy ul. 11 Listopada (dawną Salą Śpiewaków) Mieczysławowi Stawskiemu. "
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVB1" />
+
+        <TextView
+            android:id="@+id/txtVB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Druga połowa XX wieku"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS1" />
+
+        <TextView
+            android:id="@+id/txtVS2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:text="W 1950 roku Karol Adwentowicz przestaje pełnić funkcję dyrektora i kierownika artystycznego Teatru Powszechnego. Nowym dyrektorem zostaje Jadwiga Chojnacka. Dzięki przyjęciu zasady różnorodności widzowie Teatru Powszechnego zetknęli się po raz pierwszy ze sztuką Szekspira „Poskromienie złośnicy” i z polskim dramatem romantycznym „Mazepa” Juliusza Słowackiego, a także z takimi tytułami jak: „Chory z urojenia” Moliera, „Grzesznicy bez winy” Ostrowskiego, „Damy i Huzary” Fredry, „Eugenia Grandet” Balzaka, „Intryga i miłość” Schillera, „Pigmalion” Shawa, „Śluby panieńskie” Fredry itd. Lata 1957-1959 to okres dyrekcji Zbigniewa Koczanowicza. Na szczególną uwagę z tego okresu działalności Teatru zasługuje inscenizacja „Cyda” Stanisława Wyspiańskiego z Leonem Niemczykiem w roli głównej, „Pamiętnik Anny Frank” Francesa Goodricha i Alberta Hacetta oraz Maksyma Gorkiego „Jegor Bułyczow i inni” – i dwie znakomicie w tych sztukach zapisane role – Romany Kamińskiej kreującej postać Anny Frank ii Feliska Żukowskiego z wielkim powodzeniem wcielającego się w rolę Jegra Bułyczowa trwale wpisały się na listę uwieńczonych sukcesem przedsięwzięć tego teatru. W drugiej połowie lat 70. dyrektorem i kierownikiem artystycznym zostaje Roman Kłosowski. "
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVB2" />
+
+        <TextView
+            android:id="@+id/txtVB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="1990-e i do chwili obecnej"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS2" />
+
+        <TextView
+            android:id="@+id/txtVS3"
+            android:layout_width="361dp"
+            android:layout_height="296dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:text="Ewa Pilawska – od 13 października 1995 roku dyrektor Teatru Powszechnego w Łodzi, twórczyni i dyrektor artystyczny Międzynarodowego  Festiwalu Sztuk Przyjemnych i Nieprzyjemnych.  Dzięki jej staraniom w październiku 2013 roku uruchomiana została Mała Scena Teatru Powszechnego w Łodzi,  o którą Teatr zabiegał przeszło 60 lat.     Ewa Pilawska zreformowała Teatr Powszechny i nadała mu wyraźne logo artystyczne.   Stworzyła w Teatrze Powszechnym wiele autorskich projektów, m.in: Polskie Centrum Komedii,  Międzynarodowy Festiwal Sztuk Przyjemnych i Nieprzyjemnych, „Dziecko w sytuacji” czy „Teatr dla niewidomych i słabo widzących”.     Jako dyrektor hołduje zasadzie „Teatr blisko ludzi”. Wprowadziła wiele inicjatyw stworzonych z myślą o publiczności,   poszerzających i ułatwiającym dostęp do kultury tj:   „Spektakle dla bezrobotnych”, „Teatr przyjazny seniorom”."
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVB3" />
+
+
+
+
+
+        <!--    footer    -->
+
+        <View
+            android:id="@+id/rectangle_floor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:background="#009688"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS3"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_floor"
+            app:srcCompat="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="Legionów 21, 91-069 Łódź"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adres"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="moj@teatr.pl"
+            android:autoLink="email"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail_icon" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

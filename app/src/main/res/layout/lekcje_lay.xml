@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header        -->
+
+<!--        <View-->
+<!--            android:id="@+id/rectangle_"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="#009688"-->
+<!--            android:clickable="false"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageViewRec"-->
+<!--            tools:layout_editor_absoluteX="170dp" />-->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="75dp"
+            android:layout_height="88dp"
+
+            android:background="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+            app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/main_logo" />
+
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_"
+            app:srcCompat="@drawable/icon_facebook"/>
+
+        <!-- -->
+
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="Lekcje teatralne"
+            android:textColor="#F44336"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_" />
+
+
+        <TextView
+            android:id="@+id/txtV0"
+            android:layout_width="372dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="Zorganizowane grupy zapraszamy na edukację teatralną poświęconą historii kurtyn.  \nProsimy o wcześniejszą rezerwację terminów w Dziale Sprzedaży i Obsługi Widzów  \n(42) 633 50 36.  \nBilet grupowy 10-osobowy: 1,20 zł."
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tytul" />
+
+<!--1-->
+        <TextView
+            android:id="@+id/txtVB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="EDUKACJA TEATRALNA"
+            android:textColor="#D2000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV0" />
+
+        <TextView
+            android:id="@+id/txtVM1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="TEATR – 1"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtVB1"
+            tools:layout_editor_absoluteX="173dp" />
+
+        <TextView
+            android:id="@+id/txtVS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:text="1. Wprowadzenie do nauki o teatrze \n2. Teatr-historia \n3. Teatr Powszechny \n4. Zabawy teatralne"
+            app:layout_constraintTop_toBottomOf="@+id/txtVM1"
+            tools:layout_editor_absoluteX="90dp" />
+<!--2-->
+        <TextView
+            android:id="@+id/txtVM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:text="TEATR – 2"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS1"
+            tools:layout_editor_absoluteX="173dp" />
+
+        <TextView
+            android:id="@+id/txtVS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:text="1. Teatr antyku \n2. Czytanie dramatów (fragmentów) \n3. Elementarne zadania aktorskie "
+            app:layout_constraintTop_toBottomOf="@+id/txtVM2"
+            tools:layout_editor_absoluteX="90dp" />
+
+<!--3-->
+        <TextView
+            android:id="@+id/txtVM3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:text="TEATR – 3"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS2"
+            tools:layout_editor_absoluteX="173dp" />
+
+
+        <!--4-->
+
+        <TextView
+            android:id="@+id/txtVS3"
+            android:layout_width="271dp"
+            android:layout_height="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:text="1. Teatr staropolski \n2. Fragmenty spektaklu \n3. Elementarne zadania aktorskie  \n(krótkie formy sceniczne – skecz, dowcip)"
+            app:layout_constraintTop_toBottomOf="@+id/txtVM3"
+            tools:layout_editor_absoluteX="70dp" />
+
+        <TextView
+            android:id="@+id/txtVM4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:text="TEATR – 4"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS3"
+            tools:layout_editor_absoluteX="173dp" />
+
+        <!--5-->
+        <TextView
+            android:id="@+id/txtVS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:text="1. Teatr misteryjny \n2. Czytanie pierwszych tekstów napisanych w języku polskim \n3. Inscenizowanie Lamentu Świętokrzyskiego"
+            app:layout_constraintTop_toBottomOf="@+id/txtVM4"
+            tools:layout_editor_absoluteX="11dp" />
+
+        <TextView
+            android:id="@+id/txtVM5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:text="TEATR – 5"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS4"
+            tools:layout_editor_absoluteX="173dp" />
+
+        <!--6-->
+        <TextView
+            android:id="@+id/txtVS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"
+            android:text="1. Teatr Szekspirowski \n2. Monologi \n3. Zadania sceniczne"
+            app:layout_constraintTop_toBottomOf="@+id/txtVM5"
+            tools:layout_editor_absoluteX="126dp" />
+
+        <TextView
+            android:id="@+id/txtVM6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:text="TEATR – 6"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS5"
+            tools:layout_editor_absoluteX="173dp" />
+
+        <TextView
+            android:id="@+id/txtVS6"
+            android:layout_width="378dp"
+            android:layout_height="118dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:text="1. Teatr romantyczny \n2. Polski Teatr romantyczny \n3. Twórczość J. Słowackiego, A. Mickiewicza, C.K. Norwida \n4. Romantyczny monolog, wiersz \n5. Zadania sceniczne "
+            app:layout_constraintTop_toBottomOf="@+id/txtVM6"
+            tools:layout_editor_absoluteX="11dp" />
+
+        <!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+<!--footer-->
+
+
+
+
+        <View
+            android:id="@+id/rectangle_floor"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/txtVS6"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_floor"
+            app:srcCompat="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="Legionów 21, 91-069 Łódź"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adres"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:text="moj@teatr.pl"
+            android:autoLink="email"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
